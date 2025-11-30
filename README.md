@@ -9,9 +9,9 @@ Site: https://luanylashdesigner.netlify.app/
 
 ## 🇧🇷 Sobre o Projeto
 
-Esta Landing Page foi desenvolvida como parte de um **projeto acadêmico** para a disciplina de [Nome da Disciplina/Curso, ex: Desenvolvimento Web] do curso de **Sistemas para Internet**.
+Esta Landing Page foi desenvolvida como parte de um **projeto acadêmico** para a disciplina de Projetos de Naveção e Usabilidade do curso de **Sistemas para Internet**.
 
-O projeto foi realizado de forma voluntária e **sem fins lucrativos**, com o objetivo de criar uma presença digital profissional para o estúdio de estética **Luany Lashes**. O foco principal foi aplicar conceitos de Front-end e Design System para resolver uma demanda real de negócio.
+O projeto foi realizado de forma voluntária e **sem fins lucrativos**, com o objetivo de criar uma presença digital profissional para o estúdio de estética **Luany Lash Design**. O foco principal foi aplicar conceitos de Front-end e Design System para resolver uma demanda real de negócio.
 
 ### 🎨 Design & Identidade Visual
 Um dos grandes diferenciais deste projeto é que **toda a identidade visual foi criada do zero** por mim:
@@ -23,7 +23,7 @@ Um dos grandes diferenciais deste projeto é que **toda a identidade visual foi 
 ### 🛠️ Tecnologias Utilizadas
 - **HTML5:** Estrutura semântica.
 - **CSS3:** Estilização avançada, Flexbox, Variáveis (CSS Variables) e Responsividade (Media Queries).
-- **JavaScript (Vanilla):** Lógica do carrossel de imagens e menu mobile interativo (sem uso de bibliotecas externas).
+- **JavaScript:** Lógica do carrossel de imagens e menu mobile interativo.
 
 ### ✨ Funcionalidades
 - Layout totalmente responsivo (Mobile e Desktop).
@@ -41,7 +41,7 @@ Um dos grandes diferenciais deste projeto é que **toda a identidade visual foi 
 
 This Landing Page was developed as a **university project** for the **Internet Systems** degree.
 
-It was created as a voluntary, **non-profit** initiative to build a professional digital presence for the **Luany Lashes** beauty studio. The main goal was to apply Front-end development and UI Design concepts to solve a real-world business need.
+It was created as a voluntary, **non-profit** initiative to build a professional digital presence for the **Luany Lash Design** beauty studio. The main goal was to apply Front-end development and UI Design concepts to solve a real-world business need.
 
 ### 🎨 Design & Visual Identity
 A key feature of this project is that **the entire visual identity was created from scratch** by me:
