@@ -1,0 +1,465 @@
+/* --- PÁGINA DE AGENDAMENTO --- */
+
+/* --- BOTÃO VOLTAR --- */
+.back-button {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 205, 201, 0.4);
+    transition: all 0.3s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-button:hover {
+    background-color: var(--cor-secundaria);
+    transform: translateX(-5px);
+}
+
+/* --- HERO AGENDAMENTO --- */
+.hero-agendamento {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, #ffb3ad 100%);
+    padding: 120px 0 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-agendamento h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* --- SEÇÃO DO FORMULÁRIO --- */
+.form-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fafafa 0%, #fff 50%, #fafafa 100%);
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* --- CONTAINER DO FORMULÁRIO --- */
+.form-container {
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group label i {
+    color: var(--cor-primaria);
+    margin-right: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    transition: all 0.3s;
+    background-color: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(255, 205, 201, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-hint {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* --- LINHA DE FORMULÁRIO (2 COLUNAS) --- */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* --- BOTÃO SUBMIT --- */
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, var(--cor-secundaria) 0%, #b08d35 100%);
+    color: #fff;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(201, 166, 71, 0.4);
+    transition: all 0.3s;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(201, 166, 71, 0.5);
+}
+
+.btn-submit:active {
+    transform: translateY(-1px);
+}
+
+/* --- CONTAINER DE INFORMAÇÕES --- */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.info-item i {
+    font-size: 1.8rem;
+    color: var(--cor-primaria);
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-item p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- ALERTA INFORMATIVO --- */
+.info-alert {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #ffc107;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.2);
+}
+
+.info-alert i {
+    font-size: 1.5rem;
+    color: #d39e00;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.info-alert p {
+    font-size: 0.9rem;
+    color: #856404;
+    line-height: 1.6;
+}
+
+.info-alert strong {
+    font-weight: 900;
+}
+
+/* ========================================
+   RESPONSIVIDADE MOBILE OTIMIZADA
+   ======================================== */
+
+/* --- Tablets --- */
+@media (max-width: 968px) {
+    .form-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .info-container {
+        gap: 25px;
+    }
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+    /* Botão voltar mobile */
+    .back-button {
+        top: 15px;
+        left: 15px;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        gap: 6px;
+    }
+
+    /* Hero mobile */
+    .hero-agendamento {
+        padding: 90px 20px 50px 20px;
+    }
+
+    .hero-agendamento h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* Formulário mobile */
+    .form-section {
+        padding: 40px 0;
+    }
+
+    .form-wrapper {
+        gap: 30px;
+    }
+
+    .form-container {
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+
+    .form-group label i {
+        margin-right: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+        border-radius: 8px;
+    }
+
+    .form-group textarea {
+        min-height: 80px;
+    }
+
+    .form-hint {
+        font-size: 0.75rem;
+        margin-top: 4px;
+    }
+
+    /* Linha de formulário mobile */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Botão submit mobile */
+    .btn-submit {
+        padding: 15px 30px;
+        font-size: 1rem;
+        border-radius: 30px;
+        margin-top: 15px;
+        gap: 8px;
+    }
+
+    /* Info cards mobile */
+    .info-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .info-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .info-item {
+        gap: 15px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .info-item i {
+        font-size: 1.5rem;
+    }
+
+    .info-item strong {
+        font-size: 0.9rem;
+    }
+
+    .info-item p {
+        font-size: 0.85rem;
+    }
+
+    /* Alerta mobile */
+    .info-alert {
+        padding: 20px;
+        border-radius: 12px;
+        gap: 12px;
+        border-left-width: 4px;
+    }
+
+    .info-alert i {
+        font-size: 1.3rem;
+    }
+
+    .info-alert p {
+        font-size: 0.85rem;
+    }
+}
+
+/* --- Mobile pequeno --- */
+@media (max-width: 375px) {
+    .hero-agendamento {
+        padding: 80px 15px 40px 15px;
+    }
+
+    .hero-agendamento h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .form-container {
+        padding: 25px 15px;
+    }
+
+    .form-group label {
+        font-size: 0.8rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        padding: 14px 25px;
+        font-size: 0.95rem;
+    }
+
+    .info-card {
+        padding: 20px 15px;
+    }
+
+    .info-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .info-alert {
+        padding: 15px;
+    }
+}
+
+/* --- Landscape mobile --- */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-agendamento {
+        padding: 80px 20px 40px 20px;
+    }
+
+    .hero-agendamento h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-section {
+        padding: 30px 0;
+    }
+}

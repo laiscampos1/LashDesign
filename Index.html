@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luany Lashes - Estética Avançada</title>
+    
+    <link rel="stylesheet" href="lash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <!-- Menu Mobile Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="close-icon" id="closeBtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#procedimentos" class="menu-link">Nossos Procedimentos</a>
+            <a href="#agendamento" class="menu-link">Agende Já</a>
+            <a href="#localizacao" class="menu-link">Endereço</a>
+            <a href="#contato" class="menu-link">Redes Sociais</a>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-logo-shape">
+            <img src="logoajustada.png" alt="Logo Luany Lashes">
+        </div>
+
+        <div class="container header-container">
+            <div class="menu-icon" id="openMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Realce sua beleza natural</h1>
+                    <p>Especialista em realçar seu olhar com naturalidade, conforto e segurança</p>
+                    <a href="saibamais.html" class="btn-hero">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Procedimentos -->
+    <section class="services" id="procedimentos">
+        <div class="container">
+            <h2>Nossos Procedimentos</h2>
+            <p class="section-subtitle">Conheça nossas técnicas exclusivas e escolha o acabamento ideal para o seu dia a dia.</p>
+            
+            <div class="carousel-wrapper">
+                <img src="arrow.png" alt="Anterior" class="carousel-arrow arrow-prev" id="arrow-prev">
+
+                <div class="carousel-track" id="carousel-track">
+                    <div class="card">
+                        <img src="cilios 5.png" alt="Volume Russo">
+                        <span>Volume Russo</span>
+                    </div>
+                    <div class="card">
+                        <img src="cilios 8.png" alt="Fio a Fio">
+                        <span>Fio a Fio</span>
+                    </div>
+                    <div class="card">
+                        <img src="cilios 9.png" alt="Híbrido">
+                        <span>Híbrido</span>
+                    </div>
+                    <div class="card">
+                        <img src="cilios 6.PNG" alt="Brasileiro">
+                        <span>Brasileiro</span>
+                    </div>
+                    <div class="card">
+                        <img src="colorido.PNG" alt="Colorido">
+                        <span>Colorido</span>
+                    </div>
+                </div>
+
+                <img src="arrow.png" alt="Próxima" class="carousel-arrow arrow-next" id="arrow-next">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Agendamento -->
+    <section class="booking-section" id="agendamento">
+        <div class="container booking-container">
+            <div class="booking-text">
+                <h2 class="gold-title">Transforme seu Olhar</h2>
+                <p>
+                    Tenha cílios impecáveis e prontos para qualquer ocasião assim que acordar, com durabilidade e conforto.
+                    <br><br>
+                    Venha conhecer nosso espaço e realçar o que você tem de melhor.
+                </p>
+                <button class="btn-agenda" onclick="window.location.href='agendamento.html'">AGENDE SEU HORÁRIO</button>
+            </div>
+            
+            <div class="booking-image">
+                <div class="bg-square"></div>
+                <img src="cilios 10.PNG" alt="Olho close-up">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Localização -->
+    <section class="location-section" id="localizacao">
+        <div class="container">
+            <div class="map-icon">
+                <img src="mapa.png" alt="Mapa">
+            </div>
+            <div class="address-text">
+                <i class="fas fa-map-marker-alt"></i> 
+                <span>Rua Martinho Araújo, 221
+Vila Ligya, Guarujá - SP</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="social-footer" id="contato">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/luanylashdesigner/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- SCRIPT DO CARROSSEL ---
+        const track = document.getElementById("carousel-track");
+        const nextBtn = document.getElementById("arrow-next");
+        const prevBtn = document.getElementById("arrow-prev");
+
+        if(track && nextBtn && prevBtn) {
+            nextBtn.addEventListener("click", () => {
+                track.scrollBy({ left: 330, behavior: "smooth" });
+            });
+            prevBtn.addEventListener("click", () => {
+                track.scrollBy({ left: -330, behavior: "smooth" });
+            });
+        }
+
+        // --- SCRIPT DO MENU MOBILE ---
+        const mobileMenu = document.getElementById("mobileMenu");
+        const openBtn = document.getElementById("openMenuBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const menuLinks = document.querySelectorAll(".menu-link");
+
+        // Abrir menu
+        if(openBtn) {
+            openBtn.addEventListener("click", () => {
+                mobileMenu.classList.add("active");
+            });
+        }
+
+        // Fechar menu no X
+        if(closeBtn) {
+            closeBtn.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+            });
+        }
+
+        // Fechar menu ao clicar num link
+        menuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+            });
+        });
+    </script>
+
+</body>
+</html>

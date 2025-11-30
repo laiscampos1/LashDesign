@@ -1,0 +1,616 @@
+/* --- BOTÃO VOLTAR --- */
+.back-button {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 205, 201, 0.4);
+    transition: all 0.3s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-button:hover {
+    background-color: var(--cor-secundaria);
+    transform: translateX(-5px);
+}
+
+/* --- HERO SOBRE --- */
+.hero-sobre {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, #ffb3ad 100%);
+    padding: 120px 0 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-sobre h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* --- SEÇÃO INFO --- */
+.info-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text h2 {
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* --- SEÇÃO BENEFÍCIOS --- */
+.benefits-section {
+    padding: 100px 0;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    margin-bottom: 60px;
+    color: var(--cor-secundaria);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--cor-primaria), #ffb3ad);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.benefit-icon i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--cor-texto);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- SEÇÃO TIPOS --- */
+.types-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.types-section h2 {
+    text-align: center;
+    color: var(--cor-secundaria);
+    margin-bottom: 15px;
+}
+
+.types-list {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.type-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.type-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.type-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.type-item:nth-child(even):hover {
+    transform: translateX(-10px);
+}
+
+.type-item img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.type-info h3 {
+    font-size: 1.8rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.type-info p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* --- SEÇÃO CUIDADOS --- */
+.care-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #fafafa 0%, #fff 100%);
+}
+
+.care-section h2 {
+    text-align: center;
+    color: var(--cor-secundaria);
+    margin-bottom: 60px;
+}
+
+.care-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.care-card {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s;
+    border-left: 4px solid var(--cor-primaria);
+}
+
+.care-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    border-left-color: var(--cor-secundaria);
+}
+
+.care-card i {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.care-card h4 {
+    font-size: 1.2rem;
+    color: var(--cor-texto);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.care-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- CTA SECTION --- */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, #ffb3ad 100%);
+    text-align: center;
+    color: #fff;
+}
+
+.cta-section h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.btn-cta {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    border: none;
+    padding: 18px 50px;
+    border-radius: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(201, 166, 71, 0.4);
+    transition: all 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #b08d35;
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(201, 166, 71, 0.5);
+}
+
+/* ========================================
+   RESPONSIVIDADE MOBILE OTIMIZADA
+   ======================================== */
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+    /* Botão voltar mobile */
+    .back-button {
+        top: 15px;
+        left: 15px;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        gap: 6px;
+    }
+
+    /* Hero mobile */
+    .hero-sobre {
+        padding: 90px 20px 50px 20px;
+    }
+
+    .hero-sobre h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+
+    /* Info section mobile */
+    .info-section {
+        padding: 50px 0;
+    }
+
+    .info-content {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .info-text h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+
+    .info-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    .info-image img {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    /* Benefícios mobile */
+    .benefits-section {
+        padding: 50px 0;
+    }
+
+    .benefits-section h2 {
+        margin-bottom: 40px;
+        font-size: 1.7rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .benefit-card {
+        padding: 30px 25px;
+    }
+
+    .benefit-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .benefit-icon i {
+        font-size: 1.8rem;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .benefit-card p {
+        font-size: 0.95rem;
+    }
+
+    /* Tipos mobile */
+    .types-section {
+        padding: 50px 0;
+    }
+
+    .types-section h2 {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+        padding: 0 20px;
+    }
+
+    .types-list {
+        margin-top: 40px;
+        gap: 35px;
+    }
+
+    .type-item,
+    .type-item:nth-child(even) {
+        flex-direction: column;
+        padding: 25px 20px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .type-item:hover,
+    .type-item:nth-child(even):hover {
+        transform: translateY(-8px);
+    }
+
+    .type-item img {
+        width: 100%;
+        max-width: 280px;
+        height: 280px;
+        border-radius: 12px;
+    }
+
+    .type-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .type-info p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    /* Cuidados mobile */
+    .care-section {
+        padding: 50px 0;
+    }
+
+    .care-section h2 {
+        margin-bottom: 40px;
+        font-size: 1.7rem;
+        padding: 0 20px;
+    }
+
+    .care-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .care-card {
+        padding: 30px 20px;
+        border-radius: 12px;
+        border-left-width: 3px;
+    }
+
+    .care-card i {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .care-card h4 {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+    }
+
+    .care-card p {
+        font-size: 0.9rem;
+    }
+
+    /* CTA mobile */
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .btn-cta,
+    .btn-agenda {
+        padding: 15px 35px;
+        font-size: 1rem;
+        border-radius: 30px;
+        max-width: 100%;
+    }
+}
+
+/* --- Mobile pequeno --- */
+@media (max-width: 375px) {
+    .hero-sobre {
+        padding: 80px 15px 40px 15px;
+    }
+
+    .hero-sobre h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .info-section {
+        padding: 40px 0;
+    }
+
+    .info-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-text p {
+        font-size: 0.95rem;
+    }
+
+    .benefits-section,
+    .types-section,
+    .care-section {
+        padding: 40px 0;
+    }
+
+    .benefits-section h2,
+    .types-section h2,
+    .care-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .benefit-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .benefit-icon i {
+        font-size: 1.6rem;
+    }
+
+    .type-item img {
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .type-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .type-info p {
+        font-size: 0.9rem;
+    }
+
+    .cta-section {
+        padding: 50px 15px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-section p {
+        font-size: 0.95rem;
+    }
+
+    .btn-cta,
+    .btn-agenda {
+        padding: 14px 30px;
+        font-size: 0.95rem;
+    }
+}
+
+/* --- Landscape mobile --- */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-sobre {
+        padding: 80px 20px 40px 20px;
+    }
+
+    .hero-sobre h1 {
+        font-size: 1.8rem;
+    }
+
+    .info-section,
+    .benefits-section,
+    .types-section,
+    .care-section {
+        padding: 40px 0;
+    }
+
+    .type-item img {
+        max-width: 200px;
+        height: 200px;
+    }
+}

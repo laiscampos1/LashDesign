@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Luany Lashes</title>
+    
+    <link rel="stylesheet" href="lash.css">
+    <link rel="stylesheet" href="agendamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Botão Voltar -->
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero-agendamento">
+        <div class="container">
+            <h1>Agende seu Horário</h1>
+            <p class="hero-subtitle">Preencha o formulário e entraremos em contato para confirmar</p>
+        </div>
+    </section>
+
+    <!-- Formulário de Agendamento -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <!-- Formulário -->
+                <div class="form-container">
+                    <form id="agendamentoForm">
+                        <div class="form-group">
+                            <label for="nome">
+                                <i class="fas fa-user"></i> Nome Completo *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                placeholder="Digite seu nome completo"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">
+                                <i class="fab fa-whatsapp"></i> Telefone/WhatsApp *
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="telefone" 
+                                name="telefone" 
+                                placeholder="(XX) XXXXX-XXXX"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> E-mail *
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="seuemail@exemplo.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servico">
+                                <i class="fas fa-star"></i> Serviço Desejado *
+                            </label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="classico" data-duracao="2h">Cílios Clássicos - 2h</option>
+                                <option value="brasileiro" data-duracao="2h30">Volume Brasileiro - 2h30</option>
+                                <option value="hibrido" data-duracao="2h30">Híbrido - 2h30</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="data">
+                                    <i class="fas fa-calendar"></i> Data Preferencial *
+                                </label>
+                                <input 
+                                    type="date" 
+                                    id="data" 
+                                    name="data" 
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="horario">
+                                    <i class="fas fa-clock"></i> Horário Preferencial *
+                                </label>
+                                <select id="horario" name="horario" required>
+                                    <option value="">Selecione um horário</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="08:30">08:30</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="09:30">09:30</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="10:30">10:30</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="16:00">16:00</option>
+                                </select>
+                                <small class="form-hint">Último horário de início varia conforme a duração do serviço</small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="observacoes">
+                                <i class="fas fa-comment"></i> Observações
+                            </label>
+                            <textarea 
+                                id="observacoes" 
+                                name="observacoes" 
+                                rows="4"
+                                placeholder="Alguma informação adicional? (opcional)"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Agendamento
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="info-container">
+                    <div class="info-card">
+                        <h3><i class="fas fa-info-circle"></i> Informações de Contato</h3>
+                        
+                        <div class="info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>(13) 99999-9999</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Endereço</strong>
+                                <p>Rua Martinho Araújo, 221<br>Vila Ligya, Guarujá - SP</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horário de Funcionamento</strong>
+                                <p>Terça a Sábado: 8h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-alert">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p><strong>Importante:</strong> O agendamento será confirmado após análise de disponibilidade. Você receberá um retorno em até 24 horas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="social-footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/luanylashdesigner/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque.</p>
+        </div>
+    </footer>
+
+    <script src="agendamento.js"></script>
+</body>
+</html>
